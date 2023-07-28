@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DevOverflow.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevOverflow.Controllers
@@ -8,7 +9,24 @@ namespace DevOverflow.Controllers
         // GET: ResponseController
         public ActionResult Index()
         {
-            return View();
+            return View(new List<Response>()
+            {
+                new Response
+                {
+                    Id = 1,
+                    Author= "Steven Spielberg",
+                    Description= "Lo Squalo, Jurassic Park, Prova a prendermi, Schinder's list, Salvate il soldato Ryan, Ritorno al futuro, Indiana Jones",
+                    IsAccepted=""                    
+                },
+
+                new Response
+                {
+                    Id = 2,
+                    Author= "James Cameron",
+                    Description= "Titanic, Avatar, Terminator, Rambo 2, Sanctum 3D, Solaris",
+                    IsAccepted=""                    
+                }
+            });
         }
 
         // GET: ResponseController/Details/5

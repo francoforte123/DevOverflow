@@ -13,7 +13,7 @@ namespace DevOverflow.Controllers
             {
                 new Request
                 {
-                    Id = 0,
+                    Id = 1,
                     Author= "Steven Spielberg",
                     Title= "Write some movies turn around of Steven Spielberg",
                     Description= ""
@@ -21,7 +21,7 @@ namespace DevOverflow.Controllers
 
                 new Request
                 {
-                    Id = 1,
+                    Id = 2,
                     Author= "James Cameron",
                     Title= "Write some movies turn around of James Cameron",
                     Description= ""
